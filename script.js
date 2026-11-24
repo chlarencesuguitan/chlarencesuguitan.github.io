@@ -20,35 +20,35 @@ const CONFIG = {
     "I wanted it to be a collection of songs that express what I feel for you, including the things I sometimes struggle to put into words.",
     "",
     "That’s why it starts with the lighter side of things.",
-    "The excitement, the butterflies, the happiness, and the feeling of being so ridiculously in love with someone.",
+    "The excitement, the butterflies, the happiness, and the feeling of being so in love with you.",
     "Because that’s how you make me feel bebi.",
-    "You make me happy in ways I sometimes can’t explain, and I hope you never get tired of seeing that side of me.",
+    "You make me happy in ways I sometimes can’t explain, and I hope you feel the same way too.",
     "",
     "But as you listen further, you’ll notice that the songs become a little heavier.",
     "I wanted to include that side of me, too.",
     "My fears, my insecurities, my tendency to overthink, and sometimes the uncertainty I carry.",
-    "Loving someone this much also means realizing how much they matter to you, and that can be a little scary.",
+    "Loving someone this much also means realizing how much they matter to you, and that can be a little scary for me.",
     "I don’t always know how to express these feelings, but I hope these songs can help you understand them a little better.",
     "I don’t expect you to fix those fears or make every uncertainty disappear.",
     "I just want to be able to share that side of myself with you, too.",
     "",
     "And when you reach the last few songs, I hope you understand why I chose to end it the way I did.",
-    "After all the happy moments, the vulnerable feelings, and the things I’m sometimes afraid to say, I still want the last thing you hear to be happiness by Rex.",
-    "Because despite everything, our ups and downs, I’ll be the one baby, I’ll be the one who will stay until the end.",
+    "After all the happy moments, the vulnerable feelings, and the things I’m sometimes afraid to say, I still want the last thing you hear to be is my commitement to you, that why the last song is happiness by rex.",
+    "Because despite everything, our ups and downs, I’ll be the one bebi, I’ll be the one who will stay until the end.",
     "",
     "There’s a reason I carried over the title of my old playlist, too.",
     "Back then, when we weren’t officially together yet, I made i’d rather take the long way home.",
     "And now, here we are.",
     "I wanted to call this one i’d still rather take the long way home because even now that we’re together, I would still choose the longer route if it meant having a little more time with you.",
-    "I would still want those extra minutes, those unplanned conversations, and those moments when neither of us is in a hurry to say goodbye.",
+    "I would still want those extra minutes, and those moments when neither of us is in a hurry to say goodbye.",
     "",
-    "I guess that’s what this playlist is really about.",
+    "I guess that’s what this playlist is really about, love.",
     "It’s about how I see you, how I feel about you, and how much I want to keep choosing you every day.",
     "Cheers to our first month together.",
     "I love you so much bebi 😚"
   ]
 };
-/* -------------------- */
+
 
 const $ = (id) => document.getElementById(id);
 const panel = $("letter");
@@ -58,7 +58,7 @@ const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 $("title").textContent = CONFIG.title;
 $("sub").textContent = CONFIG.subtitle;
 
-/* Spotify code (decorative stand-in until the real code is added) */
+
 (function buildCode() {
   const a = $("code");
   const img = document.createElement("img");
@@ -72,7 +72,7 @@ $("sub").textContent = CONFIG.subtitle;
   }
 })();
 
-/* Cover photo */
+
 function setPhoto(src) {
   const c = $("cover");
   c.src = src;
@@ -90,7 +90,7 @@ $("file").addEventListener("change", (e) => {
   r.readAsDataURL(f);
 });
 
-/* Letter lines */
+
 const items = [];
 CONFIG.letter.forEach((text) => {
   if (!text) {
